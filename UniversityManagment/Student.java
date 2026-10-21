@@ -3,7 +3,7 @@ package UniversityManagment;
 class Student{
     private String Id;
     private String name;
-    String uniname;
+    final String uniname;
     private String program;
     private int Semester;
     private String [] courses;
@@ -16,8 +16,8 @@ class Student{
         Semester=0;
         courses = null ;
         for (int i = 0; i < marks.length; i++) {
-            marks[i]=0;
             courses[i]=null;
+            marks[i]=0;
         }
     }
 
@@ -35,5 +35,24 @@ class Student{
     }
     void setMarks(int mark){
         this.marks= new int[]{mark};
+    }
+    String getid(){
+        return this.Id;
+    }
+    String getname(){
+        return this.name;
+    }
+    String getprogram(){
+        return this.program;
+    }
+    String getCourses(){
+        return this.courses;
+    }
+    int getMarks(){
+        return this.marks;
+    }
+
+    String getuniname(){
+        return uniname;
     }
 }

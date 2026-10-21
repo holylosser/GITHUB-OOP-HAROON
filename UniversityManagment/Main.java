@@ -16,5 +16,15 @@ public class Main {
             System.out.println("Enter Your your marks of Course ");
             int mark=sc.nextInt();one.setMarks(mark);
         }
+        System.out.println("The Id of This Student is "+one.getid());
+        System.out.println("The Name of This Student is "+one.getname());
+        System.out.println("The University of This Student is "+one.getuniname());
+        System.out.println("The Program of this Student is "+one.getprogram());
+        for (int i = 0; i < 5; i++) {
+            System.out.println("The Course number "+(i+1)+" of this student is "+one.getCourses());
+        }
+        for (int i = 0; i < 5; i++) {
+            System.out.println("The marks of this student in course number "+(i+1)+" are "+one.getMarks());
+        }
     }
 }
