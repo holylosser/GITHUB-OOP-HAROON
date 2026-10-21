@@ -1,11 +1,13 @@
+package UniversityManagment;
+
 class Student{
     private String Id;
     private String name;
     String uniname;
     private String program;
     private int Semester;
-    private String [] courses=new String[5];
-    private int [] marks=new int[5];
+    private String [] courses;
+    private int [] marks;
     Student(){
         Id=null;
         name=null;
@@ -28,5 +30,10 @@ class Student{
     void setprogram(String pro){
         this.program=pro;
     }
-
+    void setCourses(String course){
+        this.courses= new String[]{course};
+    }
+    void setMarks(int mark){
+        this.marks= new int[]{mark};
+    }
 }
