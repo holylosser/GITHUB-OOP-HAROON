@@ -14,11 +14,8 @@ class Student{
         uniname="University of Central Punjab";
         program=null;
         Semester=0;
-        courses = null ;
-        for (int i = 0; i < marks.length; i++) {
-            courses[i]=null;
-            marks[i]=0;
-        }
+        courses = new String[5] ;
+        marks=new int[5];
     }
 
     void setid(String id){
@@ -30,11 +27,11 @@ class Student{
     void setprogram(String pro){
         this.program=pro;
     }
-    void setCourses(String course){
-        this.courses= new String[]{course};
+    void setCourses(int index ,String course){
+        this.courses[index]=course;
     }
-    void setMarks(int mark){
-        this.marks= new int[]{mark};
+    void setMarks(int index,int mark){
+        this.marks[index]=mark;
     }
     String getid(){
         return this.Id;
@@ -45,11 +42,11 @@ class Student{
     String getprogram(){
         return this.program;
     }
-    String getCourses(){
-        return this.courses;
+    String getCourses(int index){
+        return this.courses[index];
     }
-    int getMarks(){
-        return this.marks;
+    int getMarks(int index){
+        return this.marks[index];
     }
 
     String getuniname(){
