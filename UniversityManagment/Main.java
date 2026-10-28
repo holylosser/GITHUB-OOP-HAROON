@@ -1,5 +1,4 @@
 package UniversityManagment;
-
 import java.util.*;
 public class Main {
     void main(String[]args){
